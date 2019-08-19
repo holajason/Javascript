@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<server port="8080">
+  <module context="firstJS" name="firstJS" path="C:/Users/Jason/Documents/GitHub/Javascript/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/firstJS" type="static"/>
+</server>

@@ -1,0 +1,8 @@
+/**
+ * 
+ */
+
+var firstName = "john";
+console.log(firstName);
+var lastName ="Snow";
+console.log(lastName);
