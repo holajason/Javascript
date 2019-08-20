@@ -1,0 +1,13 @@
+C:\Users\Jason\Documents\GitHub\Javascript\Array\bin\Debug\netcoreapp2.1\Array.deps.json
+C:\Users\Jason\Documents\GitHub\Javascript\Array\bin\Debug\netcoreapp2.1\Array.runtimeconfig.json
+C:\Users\Jason\Documents\GitHub\Javascript\Array\bin\Debug\netcoreapp2.1\Array.runtimeconfig.dev.json
+C:\Users\Jason\Documents\GitHub\Javascript\Array\bin\Debug\netcoreapp2.1\Array.dll
+C:\Users\Jason\Documents\GitHub\Javascript\Array\bin\Debug\netcoreapp2.1\Array.pdb
+C:\Users\Jason\Documents\GitHub\Javascript\Array\obj\Debug\netcoreapp2.1\Array.csproj.CoreCompileInputs.cache
+C:\Users\Jason\Documents\GitHub\Javascript\Array\obj\Debug\netcoreapp2.1\Array.RazorAssemblyInfo.cache
+C:\Users\Jason\Documents\GitHub\Javascript\Array\obj\Debug\netcoreapp2.1\Array.RazorAssemblyInfo.cs
+C:\Users\Jason\Documents\GitHub\Javascript\Array\obj\Debug\netcoreapp2.1\Array.AssemblyInfoInputs.cache
+C:\Users\Jason\Documents\GitHub\Javascript\Array\obj\Debug\netcoreapp2.1\Array.AssemblyInfo.cs
+C:\Users\Jason\Documents\GitHub\Javascript\Array\obj\Debug\netcoreapp2.1\Array.RazorTargetAssemblyInfo.cache
+C:\Users\Jason\Documents\GitHub\Javascript\Array\obj\Debug\netcoreapp2.1\Array.dll
+C:\Users\Jason\Documents\GitHub\Javascript\Array\obj\Debug\netcoreapp2.1\Array.pdb
