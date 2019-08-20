@@ -1,0 +1,14 @@
+C:\Users\Jason\Documents\GitHub\Javascript\JSCode1\bin\Debug\netcoreapp2.1\JSCode1.deps.json
+C:\Users\Jason\Documents\GitHub\Javascript\JSCode1\bin\Debug\netcoreapp2.1\JSCode1.runtimeconfig.json
+C:\Users\Jason\Documents\GitHub\Javascript\JSCode1\bin\Debug\netcoreapp2.1\JSCode1.runtimeconfig.dev.json
+C:\Users\Jason\Documents\GitHub\Javascript\JSCode1\bin\Debug\netcoreapp2.1\JSCode1.dll
+C:\Users\Jason\Documents\GitHub\Javascript\JSCode1\bin\Debug\netcoreapp2.1\JSCode1.pdb
+C:\Users\Jason\Documents\GitHub\Javascript\JSCode1\obj\Debug\netcoreapp2.1\JSCode1.csprojAssemblyReference.cache
+C:\Users\Jason\Documents\GitHub\Javascript\JSCode1\obj\Debug\netcoreapp2.1\JSCode1.csproj.CoreCompileInputs.cache
+C:\Users\Jason\Documents\GitHub\Javascript\JSCode1\obj\Debug\netcoreapp2.1\JSCode1.RazorAssemblyInfo.cache
+C:\Users\Jason\Documents\GitHub\Javascript\JSCode1\obj\Debug\netcoreapp2.1\JSCode1.RazorAssemblyInfo.cs
+C:\Users\Jason\Documents\GitHub\Javascript\JSCode1\obj\Debug\netcoreapp2.1\JSCode1.AssemblyInfoInputs.cache
+C:\Users\Jason\Documents\GitHub\Javascript\JSCode1\obj\Debug\netcoreapp2.1\JSCode1.AssemblyInfo.cs
+C:\Users\Jason\Documents\GitHub\Javascript\JSCode1\obj\Debug\netcoreapp2.1\JSCode1.RazorTargetAssemblyInfo.cache
+C:\Users\Jason\Documents\GitHub\Javascript\JSCode1\obj\Debug\netcoreapp2.1\JSCode1.dll
+C:\Users\Jason\Documents\GitHub\Javascript\JSCode1\obj\Debug\netcoreapp2.1\JSCode1.pdb

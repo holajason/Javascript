@@ -1,0 +1,13 @@
+C:\Users\Jason\Documents\GitHub\Javascript\IfAndElseStatement\bin\Debug\netcoreapp2.1\IfAndElseStatement.deps.json
+C:\Users\Jason\Documents\GitHub\Javascript\IfAndElseStatement\bin\Debug\netcoreapp2.1\IfAndElseStatement.runtimeconfig.json
+C:\Users\Jason\Documents\GitHub\Javascript\IfAndElseStatement\bin\Debug\netcoreapp2.1\IfAndElseStatement.runtimeconfig.dev.json
+C:\Users\Jason\Documents\GitHub\Javascript\IfAndElseStatement\bin\Debug\netcoreapp2.1\IfAndElseStatement.dll
+C:\Users\Jason\Documents\GitHub\Javascript\IfAndElseStatement\bin\Debug\netcoreapp2.1\IfAndElseStatement.pdb
+C:\Users\Jason\Documents\GitHub\Javascript\IfAndElseStatement\obj\Debug\netcoreapp2.1\IfAndElseStatement.csproj.CoreCompileInputs.cache
+C:\Users\Jason\Documents\GitHub\Javascript\IfAndElseStatement\obj\Debug\netcoreapp2.1\IfAndElseStatement.RazorAssemblyInfo.cache
+C:\Users\Jason\Documents\GitHub\Javascript\IfAndElseStatement\obj\Debug\netcoreapp2.1\IfAndElseStatement.RazorAssemblyInfo.cs
+C:\Users\Jason\Documents\GitHub\Javascript\IfAndElseStatement\obj\Debug\netcoreapp2.1\IfAndElseStatement.AssemblyInfoInputs.cache
+C:\Users\Jason\Documents\GitHub\Javascript\IfAndElseStatement\obj\Debug\netcoreapp2.1\IfAndElseStatement.AssemblyInfo.cs
+C:\Users\Jason\Documents\GitHub\Javascript\IfAndElseStatement\obj\Debug\netcoreapp2.1\IfAndElseStatement.RazorTargetAssemblyInfo.cache
+C:\Users\Jason\Documents\GitHub\Javascript\IfAndElseStatement\obj\Debug\netcoreapp2.1\IfAndElseStatement.dll
+C:\Users\Jason\Documents\GitHub\Javascript\IfAndElseStatement\obj\Debug\netcoreapp2.1\IfAndElseStatement.pdb
