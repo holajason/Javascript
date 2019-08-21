@@ -1,0 +1,14 @@
+C:\Users\Jason\Documents\GitHub\Javascript\HoistingPractice\bin\Debug\netcoreapp2.1\HoistingPractice.deps.json
+C:\Users\Jason\Documents\GitHub\Javascript\HoistingPractice\bin\Debug\netcoreapp2.1\HoistingPractice.runtimeconfig.json
+C:\Users\Jason\Documents\GitHub\Javascript\HoistingPractice\bin\Debug\netcoreapp2.1\HoistingPractice.runtimeconfig.dev.json
+C:\Users\Jason\Documents\GitHub\Javascript\HoistingPractice\bin\Debug\netcoreapp2.1\HoistingPractice.dll
+C:\Users\Jason\Documents\GitHub\Javascript\HoistingPractice\bin\Debug\netcoreapp2.1\HoistingPractice.pdb
+C:\Users\Jason\Documents\GitHub\Javascript\HoistingPractice\obj\Debug\netcoreapp2.1\HoistingPractice.csprojAssemblyReference.cache
+C:\Users\Jason\Documents\GitHub\Javascript\HoistingPractice\obj\Debug\netcoreapp2.1\HoistingPractice.csproj.CoreCompileInputs.cache
+C:\Users\Jason\Documents\GitHub\Javascript\HoistingPractice\obj\Debug\netcoreapp2.1\HoistingPractice.RazorAssemblyInfo.cache
+C:\Users\Jason\Documents\GitHub\Javascript\HoistingPractice\obj\Debug\netcoreapp2.1\HoistingPractice.RazorAssemblyInfo.cs
+C:\Users\Jason\Documents\GitHub\Javascript\HoistingPractice\obj\Debug\netcoreapp2.1\HoistingPractice.AssemblyInfoInputs.cache
+C:\Users\Jason\Documents\GitHub\Javascript\HoistingPractice\obj\Debug\netcoreapp2.1\HoistingPractice.AssemblyInfo.cs
+C:\Users\Jason\Documents\GitHub\Javascript\HoistingPractice\obj\Debug\netcoreapp2.1\HoistingPractice.RazorTargetAssemblyInfo.cache
+C:\Users\Jason\Documents\GitHub\Javascript\HoistingPractice\obj\Debug\netcoreapp2.1\HoistingPractice.dll
+C:\Users\Jason\Documents\GitHub\Javascript\HoistingPractice\obj\Debug\netcoreapp2.1\HoistingPractice.pdb
