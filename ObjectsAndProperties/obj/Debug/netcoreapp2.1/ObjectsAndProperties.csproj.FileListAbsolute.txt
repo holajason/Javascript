@@ -1,0 +1,14 @@
+C:\Users\Jason\Documents\GitHub\Javascript\ObjectsAndProperties\bin\Debug\netcoreapp2.1\ObjectsAndProperties.deps.json
+C:\Users\Jason\Documents\GitHub\Javascript\ObjectsAndProperties\bin\Debug\netcoreapp2.1\ObjectsAndProperties.runtimeconfig.json
+C:\Users\Jason\Documents\GitHub\Javascript\ObjectsAndProperties\bin\Debug\netcoreapp2.1\ObjectsAndProperties.runtimeconfig.dev.json
+C:\Users\Jason\Documents\GitHub\Javascript\ObjectsAndProperties\bin\Debug\netcoreapp2.1\ObjectsAndProperties.dll
+C:\Users\Jason\Documents\GitHub\Javascript\ObjectsAndProperties\bin\Debug\netcoreapp2.1\ObjectsAndProperties.pdb
+C:\Users\Jason\Documents\GitHub\Javascript\ObjectsAndProperties\obj\Debug\netcoreapp2.1\ObjectsAndProperties.csprojAssemblyReference.cache
+C:\Users\Jason\Documents\GitHub\Javascript\ObjectsAndProperties\obj\Debug\netcoreapp2.1\ObjectsAndProperties.csproj.CoreCompileInputs.cache
+C:\Users\Jason\Documents\GitHub\Javascript\ObjectsAndProperties\obj\Debug\netcoreapp2.1\ObjectsAndProperties.RazorAssemblyInfo.cache
+C:\Users\Jason\Documents\GitHub\Javascript\ObjectsAndProperties\obj\Debug\netcoreapp2.1\ObjectsAndProperties.RazorAssemblyInfo.cs
+C:\Users\Jason\Documents\GitHub\Javascript\ObjectsAndProperties\obj\Debug\netcoreapp2.1\ObjectsAndProperties.AssemblyInfoInputs.cache
+C:\Users\Jason\Documents\GitHub\Javascript\ObjectsAndProperties\obj\Debug\netcoreapp2.1\ObjectsAndProperties.AssemblyInfo.cs
+C:\Users\Jason\Documents\GitHub\Javascript\ObjectsAndProperties\obj\Debug\netcoreapp2.1\ObjectsAndProperties.RazorTargetAssemblyInfo.cache
+C:\Users\Jason\Documents\GitHub\Javascript\ObjectsAndProperties\obj\Debug\netcoreapp2.1\ObjectsAndProperties.dll
+C:\Users\Jason\Documents\GitHub\Javascript\ObjectsAndProperties\obj\Debug\netcoreapp2.1\ObjectsAndProperties.pdb
