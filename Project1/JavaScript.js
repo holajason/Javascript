@@ -12,41 +12,40 @@ GAME RULES:
 var scores, roundScore, activePlayer, gamePlaying;
 
 initRound();
+var lastDice;
 /*
- * To access any element in a HTML page, we always neeed to start by accessing the document 
- * object. 
+ * To access any element in a HTML page, we always neeed to start by accessing the document object. 
  * More reference: https://www.w3schools.com/js/js_htmldom_document.asp
  */
-//Queryselector: To select an element from the webpage, select the first element it finds
-//Select the value of the dice and place it under the score content
-/*Select the player id('#current' for id) + the current(ative player) 
- and change the round score of the player  */
-  //document.querySelector('#current-' + activePlayer).textContent = dice;
-
+//Queryselector use select an element from the webpage, it select the first element it finds
+//document.querySelector('#current-' + activePlayer).textContent = dice;
 //.innertHTML will change the inner element of HTML, for HTML need to be a string in javaScript
 //document.querySelector('#current-' + activePlayer).innerHTML = "<em>" + dice + '</em>'; //change text font
-
 //QuerySelector can also used to read a element and store it in a var
-//'#' is used for id
-//var x = document.querySelector('#score-0').textContent; //To read/get the value from the content
+//use '#' is for id || use '.' when selecting classes
+//var x = document.querySelector('#score-0').textContent;  | select a value and set it to a var
 
 
-
-//https://developer.mozilla.org/en-US/docs/Web/Events
+//https://developer.mozilla.org/en-US/docs/Web/Events for more event listener
 document.querySelector('.btn-roll').addEventListener('click', function(){
     // This is anonymous function
     if (gamePlaying) {
         //1. Need a random number as soon as a user click the button
-        //Math.floor is to round the number, math.random() will generate a random number, 
-        //*6 will generate random number between 0 -5, +1 will generate a random number between 1-6
+        //Math.floor() is to round the number, math.random() will generate a random number, 
+        // *6 will generate random number between 0 -5, +1 will generate a random number between 1-6
         var dice = Math.floor(Math.random() * 6 + 1);
-
         //2. Display the result
         var diceDOM = document.querySelector('.dice');
         diceDOM.style.display = 'block';
-        diceDOM.src = 'dice-' + dice + '.png';
-        //3. Update the round score IF the rooled number was NOT a 1 
-        if (dice !== 1) {
+        diceDOM.src = 'dice-' + dice + '.png';  //selecting the corresponding dice image
+        if (dice === 6 && lastDice === 6) {
+            //Player roll six twice, loses score
+            scores[activePlayer] = 0;
+            document.querySelector('#score-' + activePlayer).textContent = 0;
+            nextPlayer();
+        }
+        //3. Update the round score IF the rolled number was NOT a 1 
+        else if (dice !== 1) {
             //Add Score
             roundScore += dice;
             document.querySelector('#current-' + activePlayer).textContent = roundScore;
@@ -54,6 +53,7 @@ document.querySelector('.btn-roll').addEventListener('click', function(){
         else {
             nextPlayer();
         }
+        lastDice = dice;
     }
 });
 
@@ -62,11 +62,10 @@ document.querySelector('.btn-hold').addEventListener('click', function () {
     //1. Add current socre to global socre
     if (gamePlaying) { //if the game is actively playing
         scores[activePlayer] += roundScore;
-
         //2. Update the UI
         document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
         //Check if player won the game
-        if (scores[activePlayer] >= 20) {
+        if (scores[activePlayer] >= 100) {
             document.querySelector('#name-' + activePlayer).textContent = 'Winner';
             document.querySelector('.dice').style.display = 'none';
             document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
@@ -78,9 +77,7 @@ document.querySelector('.btn-hold').addEventListener('click', function () {
             nextPlayer();
         }
     }
-
 })
-
 
 
 
@@ -92,16 +89,15 @@ function nextPlayer() {
     document.getElementById('current-0').textContent = '0';
     document.getElementById('current-1').textContent = '0';
     //Change the ative player by removing or add 'active' indicator
-    //document.querySelector('.player-0-panel').classList.remove('active');
-    //document.querySelector('.player-1-panel').classList.add('active');
-
+    //Toggle method is great for hide(remove) or show(add)
     document.querySelector('.player-0-panel').classList.toggle('active');
     document.querySelector('.player-1-panel').classList.toggle('active');
     //Hide the dice if active player roll a 1, and other player turn
     document.querySelector('.dice').style.display = 'none';
 }
 
-document.querySelector('.btn-new').addEventListener('click', initRound); //call function when click, no need()
+//New Game button, call initRound when click
+document.querySelector('.btn-new').addEventListener('click', initRound);
 
 function initRound() {
     scores = [0, 0];
@@ -125,6 +121,21 @@ function initRound() {
     document.querySelector('.player-1-panel').classList.remove('winner');
     document.querySelector('.player-0-panel').classList.remove('avtive');
     document.querySelector('.player-1-panel').classList.remove('active');
-    //Initialize player 0 is the active player
+    //Set player 0 back to the initial player
     document.querySelector('.player-0-panel').classList.add('active');
 }
+
+
+/*
+Challenges 3
+Change the Game to the following Rules:
+1. A player loosese his ENTIRE Score when he rolls two 6 in a row. After that, its the next
+player's turn. (Hint: Always save the previous dice roll in a separate variable)
+2. Add an input field to the HTML where players can set the winning score, so that they
+can change the predefined score of 100. (Hint: you can read that value with the .value property
+in JavaScript. This is a good opportuniry to use google to figure this out)
+3. Add another dice to the game, so that there are two dice now. The player looses his current 
+score when one of them is a 1. (Hint: you will need CSS to position the second dice, so take a 
+look at the CSS code for the first one.)
+ */
+
