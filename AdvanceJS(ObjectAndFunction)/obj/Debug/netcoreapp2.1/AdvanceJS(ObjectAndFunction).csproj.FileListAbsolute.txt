@@ -1,0 +1,14 @@
+C:\Users\Jason\Documents\GitHub\Javascript\AdvanceJS(ObjectAndFunction)\bin\Debug\netcoreapp2.1\AdvanceJS(ObjectAndFunction).deps.json
+C:\Users\Jason\Documents\GitHub\Javascript\AdvanceJS(ObjectAndFunction)\bin\Debug\netcoreapp2.1\AdvanceJS(ObjectAndFunction).runtimeconfig.json
+C:\Users\Jason\Documents\GitHub\Javascript\AdvanceJS(ObjectAndFunction)\bin\Debug\netcoreapp2.1\AdvanceJS(ObjectAndFunction).runtimeconfig.dev.json
+C:\Users\Jason\Documents\GitHub\Javascript\AdvanceJS(ObjectAndFunction)\bin\Debug\netcoreapp2.1\AdvanceJS(ObjectAndFunction).dll
+C:\Users\Jason\Documents\GitHub\Javascript\AdvanceJS(ObjectAndFunction)\bin\Debug\netcoreapp2.1\AdvanceJS(ObjectAndFunction).pdb
+C:\Users\Jason\Documents\GitHub\Javascript\AdvanceJS(ObjectAndFunction)\obj\Debug\netcoreapp2.1\AdvanceJS(ObjectAndFunction).csprojAssemblyReference.cache
+C:\Users\Jason\Documents\GitHub\Javascript\AdvanceJS(ObjectAndFunction)\obj\Debug\netcoreapp2.1\AdvanceJS(ObjectAndFunction).csproj.CoreCompileInputs.cache
+C:\Users\Jason\Documents\GitHub\Javascript\AdvanceJS(ObjectAndFunction)\obj\Debug\netcoreapp2.1\AdvanceJS(ObjectAndFunction).RazorAssemblyInfo.cache
+C:\Users\Jason\Documents\GitHub\Javascript\AdvanceJS(ObjectAndFunction)\obj\Debug\netcoreapp2.1\AdvanceJS(ObjectAndFunction).RazorAssemblyInfo.cs
+C:\Users\Jason\Documents\GitHub\Javascript\AdvanceJS(ObjectAndFunction)\obj\Debug\netcoreapp2.1\AdvanceJS(ObjectAndFunction).AssemblyInfoInputs.cache
+C:\Users\Jason\Documents\GitHub\Javascript\AdvanceJS(ObjectAndFunction)\obj\Debug\netcoreapp2.1\AdvanceJS(ObjectAndFunction).AssemblyInfo.cs
+C:\Users\Jason\Documents\GitHub\Javascript\AdvanceJS(ObjectAndFunction)\obj\Debug\netcoreapp2.1\AdvanceJS(ObjectAndFunction).RazorTargetAssemblyInfo.cache
+C:\Users\Jason\Documents\GitHub\Javascript\AdvanceJS(ObjectAndFunction)\obj\Debug\netcoreapp2.1\AdvanceJS(ObjectAndFunction).dll
+C:\Users\Jason\Documents\GitHub\Javascript\AdvanceJS(ObjectAndFunction)\obj\Debug\netcoreapp2.1\AdvanceJS(ObjectAndFunction).pdb
