@@ -178,9 +178,40 @@ console.log(fullAgeInJapan);
 
 
 
+//Coding Challenge 2
+function Question(question, answer, correct){
+    this.question = question;
+    this.answer = answer;
+    this.correct = correct;
+}
+
+Question.prototype.displayQuestion = function() {
+    console.log(this.question)
+    for(var index = 0; index < this.answer.length; index++){
+        console.log(this.answer[index]);
+    }
+}
+
+Question.prototype.checkAnswer = function(answer){
+        if(answer === this.correct){
+            console.log('Correct Answer!');
+        }
+        else{
+            console.log('Incorrect Answer!');
+        }
+}
+
+var quest1 = new Question('What is the name of this corse teacher?',  ['0: John\n1:Michael\n2:Joans'], 2);
+
+var quest2 = new Question('Is JavaScript the coolest programming language?', ['0. Yes\n 1. No'], 0);
 
 
+var questions = [quest1,quest2];
 
+var randomQuestion = Math.floor(Math.random() * questions.length);
+questions[randomQuestion].displayQuestion();
+var userAnswer = parseInt(prompt('Please select the correct answer: '));
+questions[randomQuestion].checkAnswer(userAnswer);
 
 
 
