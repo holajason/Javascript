@@ -179,26 +179,36 @@ console.log(fullAgeInJapan);
 
 
 //Coding Challenge 2
-function Question(question, answer, correct){
+//part 7
+(function(){
+    function Question(question, answerSelection, correctAnswer){
     this.question = question;
-    this.answer = answer;
-    this.correct = correct;
+    this.answerSelection = answerSelection;
+    this.correctAnswer = correctAnswer;
 }
 
 Question.prototype.displayQuestion = function() {
     console.log(this.question)
-    for(var index = 0; index < this.answer.length; index++){
-        console.log(this.answer[index]);
+    for(var index = 0; index < this.answerSelection.length; index++){
+        console.log(this.answerSelection[index]);
     }
 }
 
-Question.prototype.checkAnswer = function(answer){
-        if(answer === this.correct){
+Question.prototype.checkAnswer = function(answer, scoredPoint){
+        var score;
+        if(answer === this.correctAnswer){
             console.log('Correct Answer!');
+           score= scoredPoint(true);
         }
         else{
             console.log('Incorrect Answer!');
+            score = scoredPoint(false);
         }
+    this.displayScore(score);
+}
+
+Question.prototype.displayScore = function(score){
+    console.log('Your current Score is: ' + score);
 }
 
 var quest1 = new Question('What is the name of this corse teacher?',  ['0: John\n1:Michael\n2:Joans'], 2);
@@ -206,12 +216,33 @@ var quest1 = new Question('What is the name of this corse teacher?',  ['0: John\
 var quest2 = new Question('Is JavaScript the coolest programming language?', ['0. Yes\n 1. No'], 0);
 
 
-var questions = [quest1,quest2];
+var questions = [quest1, quest2];
 
-var randomQuestion = Math.floor(Math.random() * questions.length);
-questions[randomQuestion].displayQuestion();
-var userAnswer = parseInt(prompt('Please select the correct answer: '));
-questions[randomQuestion].checkAnswer(userAnswer);
+//keeping the score of the user, using closure
+    function score(){
+        var scoreTotal = 0;
+        return function(correctAnswer){
+            if(correctAnswer){
+                scoreTotal++;
+            }
+            return scoreTotal;
+        }
+    }
+    var currentScore = score();
+    
+//keep looping until user want to stop
+function nextQuestion(){
+    var randomQuestion = Math.floor(Math.random() * questions.length);
+    questions[randomQuestion].displayQuestion();
+    var userAnswer = prompt('Please select the correct answer: ');
+    if(userAnswer !== 'exit'){
+        questions[randomQuestion].checkAnswer(parseInt(userAnswer), currentScore);
+        nextQuestion();
+    }
+}
+nextQuestion();
+})();
+
 
 
 
