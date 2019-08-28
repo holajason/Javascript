@@ -15,6 +15,16 @@ var budgetController = (function(){ //IIFE invoke immediately when function is c
         this.value = value;
     };
     
+    var calculateTotal = function(type){
+            var sum = 0;
+        //select the type of budget and sum all element
+            dataStorage.allItems[type].forEach(function(currentElement){
+                sum += currentElement.value;
+            });
+        //store the sum in total
+        dataStorage.total[type] = sum;
+    };
+            
     var dataStorage ={
         allItems: {
             exp : [],
@@ -22,9 +32,13 @@ var budgetController = (function(){ //IIFE invoke immediately when function is c
         },
         
         total: {
-            expense : 0,
-            income : 0
-        }
+            exp : 0,
+            inc : 0
+        },
+        
+        budget : 0,
+        percentage : -1
+        
     };
     
     //return object contains all the functions that we want to be public
@@ -52,6 +66,28 @@ var budgetController = (function(){ //IIFE invoke immediately when function is c
             //return new element
             return newItem;
         },
+        
+        calculateBudget : function(){
+            //Calculate the sume of all income and expense
+            calculateTotal('exp');
+            calculateTotal('inc');
+            
+            //Calculate the budget : income - expense
+            dataStorage.budget = dataStorage.total.inc - dataStorage.total.exp;
+            //calcualte the percent of expense
+             dataStorage.budget = Math.round((dataStorage.total.exp / dataStorage.total.inc) * 100);
+        },
+        
+        getBudget : function(){
+            return {
+                budget : dataStorage.budget,
+                totalIncome : dataStorage.total.inc,
+                totalExpense : dataStorage.total.exp,
+                percentage : dataStorage.percentage
+            }
+        },
+      
+        
         testingDisplay: function(){
             console.log(dataStorage);
         }
@@ -146,10 +182,11 @@ var applicationController = (function(budgetCtrl,UICtrl) {
 
     var updateBudget = function(){
         //1. Calculate the budget
-        
+        budgetCtrl.calculateBudget();
         //2. Return the budget
-        
+        var budget = budgetCtrl.getBudget();
         //3. Display the budget on the UI
+        console.log(budget);
     }
     
     var ctrlAddItem = function(){
