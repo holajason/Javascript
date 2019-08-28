@@ -74,8 +74,8 @@ var budgetController = (function(){ //IIFE invoke immediately when function is c
             
             //Calculate the budget : income - expense
             dataStorage.budget = dataStorage.total.inc - dataStorage.total.exp;
-            //calcualte the percent of expense
-             dataStorage.budget = Math.round((dataStorage.total.exp / dataStorage.total.inc) * 100);
+            //calcualte the each expense percentage from the total budget
+             dataStorage.percentage = Math.round((dataStorage.total.exp / dataStorage.total.inc) * 100);
         },
         
         getBudget : function(){
@@ -186,7 +186,7 @@ var applicationController = (function(budgetCtrl,UICtrl) {
         //2. Return the budget
         var budget = budgetCtrl.getBudget();
         //3. Display the budget on the UI
-        console.log(budget);
+        UICtrl.
     }
     
     var ctrlAddItem = function(){
