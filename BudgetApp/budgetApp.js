@@ -114,7 +114,8 @@ var UIController = (function(){
         budgetLabel: '.budget__value',
         incomeLabel: '.budget__income--value',
         expenseLabel : '.budget__expenses--value',
-        percentageLabel : '.budget__expenses--percentage'
+        percentageLabel : '.budget__expenses--percentage',
+        container : '.container'
     };
     
     return {
@@ -132,12 +133,12 @@ var UIController = (function(){
             //create HTML string with placeholder text
             if(type === 'inc'){
                 element = DOMStrings.incomeContainer;
-                html = '<div class="item clearfix" id="income-%id%"><div class="item__description">%description%</div><div class="right clearfix"><div class="item__value">%value%</div><div class="item__delete"><button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button> </div> </div> </div>' ;
+                html = '<div class="item clearfix" id="inc-%id%"><div class="item__description">%description%</div><div class="right clearfix"><div class="item__value">%value%</div><div class="item__delete"><button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button> </div> </div> </div>' ;
                 
             }
             else if (type === 'exp'){
                 element = DOMStrings.expenseContainer;
-                html = '<div class="item clearfix" id="expense-%id%"><div class="item__description">%description%</div> <div class="right clearfix"><div class="item__value">%value%</div> <div class="item__percentage">21%</div><div class="item__delete"><button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button></div> </div> </div> ' ;
+                html = '<div class="item clearfix" id="exp-%id%"><div class="item__description">%description%</div> <div class="right clearfix"><div class="item__value">%value%</div> <div class="item__percentage">21%</div><div class="item__delete"><button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button></div> </div> </div> ' ;
             }
             
             //Replace the placeholder text with actual data
@@ -196,13 +197,27 @@ var applicationController = (function(budgetCtrl,UICtrl) {
         document.querySelector(DOM.inputButton).addEventListener('click', ctrlAddItem);
         //<keypress event> | https://developer.mozilla.org/en-US/docs/Web/Events
         document.addEventListener('keypress', function(event){
-            //Look up for javaScript keyboard keyboard
+            //Look up for javaScript keyboard code
             if(event.keyCode === 13 || event.which === 13){
                 ctrlAddItem();
             } 
         });
-    }
+        
+       //Container is the parent class of both income_delte and expense delete 
+        document.querySelector(DOM.container).addEventListener('click', ctrlDeleteItem);
+    };
 
+    var ctrlDeleteItem = function(event){
+           
+       //Move uo to the class parent node, which is the income class, and select the index we want to delete
+        var itemID;
+        itemID =  event.target.parentNode.parentNode.parentNode.parentNode.id;
+        if(itemID){
+            
+        }
+    }
+    
+    
     var updateBudget = function(){
         //1. Calculate the budget
         budgetCtrl.calculateBudget();
@@ -228,12 +243,10 @@ var applicationController = (function(budgetCtrl,UICtrl) {
         
             //5. Calculate and update the budget
             updateBudget();
-        
-            //6. Display the budget on the UI
-            
-        
             // console.log('testing add item');
         }
+        
+        
     };
     
     
