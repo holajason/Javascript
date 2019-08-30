@@ -17,7 +17,7 @@ var budgetController = (function(){ //IIFE invoke immediately when function is c
             this.percentage = -1;
         }
     };
-    c
+    
     Expense.prototype.getPercentage = function(){
         return this.percentage;
     }
