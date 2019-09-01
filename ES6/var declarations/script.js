@@ -224,7 +224,7 @@ for(const currEle of boxesArr6){
     }
     currEle.textContent = 'I Changed to Grre!';
 }
-*/
+
 
 //ES 5
 var ages = [12,17,8,21,14,11];
@@ -269,13 +269,43 @@ const all = [h,...boxes1];
 Array.from(all).forEach(currentEle => currentEle.style.color = 'purple');
 
 
+////////////////////////////////////
+//Lecture: Rest Parameters
 
+//ES 5
+function isFullAge5(){
+   // console.log(arguments);
+    var argArr = Array.prototype.slice.call(arguments);
+    argArr.forEach(function(cur){
+        console.log((2019 - cur) >= 18);
+    })
+}
+isFullAge5(1990,1993,1955);
 
+//ES 6 
+function isFullAge6(...years){
+ //   console.log(years);
+    years.forEach(cur=>console.log(2019 - cur) >= 18);
+}
+isFullAge6(1990,1993,1955);
+*/
 
+//ES 5
+function isFullAge5(limit){
+   // console.log(arguments);
+    var argArr = Array.prototype.slice.call(arguments);
+    argArr.forEach(function(cur){
+        console.log((2019 - cur) >= 18);
+    })
+}
+isFullAge5(1990,1993,1955);
 
-
-
-
+//ES 6 
+function isFullAge6(limits, ...years){
+ //   console.log(years);
+    years.forEach(cur=>console.log(2019 - cur) >= limits);
+}
+isFullAge6(16, 1990,1993,1955);
 
 
 
