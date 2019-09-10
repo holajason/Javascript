@@ -17,14 +17,14 @@ if(question.has(4)){
 /*delete all question*/
 //question.clear();
 
-//question.forEach((val,key)=>console.log(`This is ${key} and it set to ${val}`));
-
+question.forEach((key,val)=>console.log(`This is ${key} and it set to ${val}`));
+/*
 for(let [key,val] of question.entries()){
     //console.log(`This is ${key} and it set to ${val}`)
     if(typeof(key) === 'number'){
         console.log(`Answer ${key} : ${val}`);
     }
 }
-
-const ans = parseInt(prompt('Enter the correct answer'));
-console.log(question.get(ans === question.get('Correct')));
+*/
+//const ans = parseInt(prompt('Enter the correct answer'));
+//console.log(question.get(ans === question.get('Correct')));
