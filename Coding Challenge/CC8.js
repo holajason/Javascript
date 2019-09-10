@@ -31,9 +31,8 @@ class streets extends Element{
         streetSize.set(2, 'Small');
         streetSize.set(3, 'Normal');
         streetSize.set(4, 'Big');
-        streetSize.set(5, 'Huge');
-        
-       for(let[key, val] of streetSize.entries()){
+        streetSize.set(5, 'Huge');  
+        for(let[key, val] of streetSize.entries()){
            if(this.size === key){
                return (`${this.name}, bulit in ${this.yearBuild}, is a ${val} street.`);
           }
@@ -41,16 +40,16 @@ class streets extends Element{
     }     
 }
 
-class averageCalc{
-    constructor(numElement, parkAge=[]){
+class calcualation{
+    constructor(numElement, arr=[]){
         this.numElement = numElement;
-        this.parkAge = parkAge;
+        this.arr = arr;
     }
     
     totalSum(){
         var sum = 0;
-        for (var index = 0; index < this.parkAge.length; index++) {
-            sum += this.parkAge[index];
+        for (var index = 0; index < this.arr.length; index++) {
+            sum += this.arr[index];
         }
         return sum;
     }
@@ -62,25 +61,29 @@ class averageCalc{
 }
 
 
-console.log('---Park Report---');
-const allParks = [new Park('Green Park', 1987, 0.2, 215),
-                  new Park('National Park', 1894, 2.9, 3541),
-                  new Park('Oak Park', 1953, 0.4, 945)
-                 ];
-for(var index = 0; index < allParks.length; index++){  
-    console.log(allParks[index].treeDensity());
-}
-const tree = allParks.map(ele => ele.numTrees).findIndex(ele => ele >= 1000);
+function ParkSummary(p){
+    console.log('---Park Report---');
+    const allParks = [new Park('Green Park', 1987, 0.2, 215),
+                      new Park('National Park', 1894, 2.9, 3541),
+                      new Park('Oak Park', 1953, 0.4, 945)];
+    for(var index = 0; index < allParks.length; index++){  
+        console.log(allParks[index].treeDensity());
+    }
+    const tree = allParks.map(ele => ele.numTrees).findIndex(ele => ele >= 1000);
     console.log(`${allParks[tree].name} has more than 1000 trees`);
-
-    
-console.log('---Town Street Report---');
-const allStreet = [ new streets('Ocean Avenue', 1999, 2.7,2),
-                    new streets('4th street', 2015, 0.8),
-                    new streets('Sunset Blvd', 1982, 2.5, 5),
-                    new streets('Dearborn Dr', 1894, 5, 1)];
-
-for(var index = 0; index < allStreet.length; index++){
-    console.log(allStreet[index].classifyStreet());
-    
 }
+
+function streetsSummary(s){
+    console.log('---Town Street Report---');
+    const allStreet = [ new streets('Ocean Avenue', 1999, 2.7,2),
+                        new streets('4th street', 2015, 0.8),
+                        new streets('Sunset Blvd', 1982, 2.5, 5),
+                        new streets('Dearborn Dr', 1894, 5, 1)];
+    for(var index = 0; index < allStreet.length; index++){
+        console.log(allStreet[index].classifyStreet());
+    }
+}
+
+
+ParkSummary();
+streetsSummary();
