@@ -65,11 +65,16 @@ const allParks = [new Park('Green Park', 1987, 0.2, 215),
                   new Park('Oak Park', 1953, 0.4, 945)
                  ];
 for(var index = 0; index < allParks.length; index++){
+    
     console.log(allParks[index].treeDensity());
+    /*
     if(allParks[index].numTrees > 1000){
         console.log(allParks[index].name + ' has more than 1000 trees.');
     }
+    */
 }
+const tree = allParks.map(ele => ele.numTrees).findIndex(ele => ele >= 1000);
+    console.log(`${allParks[tree].name} has more than 1000 trees`);
 
     
 console.log('---Town Street Report---');
